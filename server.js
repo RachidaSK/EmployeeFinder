@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 
 //Define a PORT
-const PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 //Set up middlewares 
 app.use(express.urlencoded({extended: true}));

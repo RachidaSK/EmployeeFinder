@@ -1,5 +1,4 @@
 let employeeList = require('../data/employees.js');
-console.log(employeeList);
 module.exports = function (app) {
 
     app.get('/api/employees', function (req, res) {
