@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="survey-body">
+    <div class="container survey-page pl-5">
+        <div class="row text-center">
+            <div class="col-md-12 mt-3">
+                <h1 class="page-title1">Survey Questions</h1>
+                <hr class="my-3">
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <h2 class="page-title2">Profile</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput">
+                            <h4>Name<small class="font-italic ml-3"><i>Required</i></small></h4>
+                        </label>
+                        <input type="text" class="form-control" id="empName" placeholder="Please enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2">
+                            <h4>Link to photo image<small class="font-italic ml-3"><i>Required</i></small></h4>
+                        </label>
+                        <input type="text" class="form-control" id="empPhoto" placeholder="Please enter a link to your linkedin or github profile">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <h2 class="page-title2">About you</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">1- </span>Sometimes, it is hard for me to make
+                                decisions.</h4>
+                        </label>
+                        <select class="form-control question" id="Q1">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">2- </span>I make a grocery list before going to the
+                                store.</h4>
+                        </label>
+                        <select class="form-control question" id="Q2">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">3- </span>I use a filing system for important
+                                papers.</h4>
+                        </label>
+                        <select class="form-control question" id="Q3">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">4- </span>It is better to be polite and
+                                rule-obedient rather than carefree.</h4>
+                        </label>
+                        <select class="form-control question" id="Q4">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">5- </span>At school I would always go over my exam
+                                papers before handing them in.</h4>
+                        </label>
+                        <select class="form-control question" id="Q5">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">6- </span>I am the kind of person who sees the big
+                                picture, focusing less on the small details.</h4>
+                        </label>
+                        <select class="form-control question" id="Q6">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">7- </span>I tend to have mood swings more often than
+                                others around me.</h4>
+                        </label>
+                        <select class="form-control question" id="Q7">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">8- </span>I lose my temper quickly but regain
+                                composure quickly too.</h4>
+                        </label>
+                        <select class="form-control question" id="Q8">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">9- </span>Rules are made to be broken.</h4>
+                        </label>
+                        <select class="form-control question" id="Q9">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-5">
+                        <label for="exampleFormControlSelect1">
+                            <h4><span class="font-weight-bold num">10- </span>I must admit I prefer to be able to do
+                                what I want rather than act within accepted
+                                rules and regulations.</h4>
+                        </label>
+                        <select class="form-control question" id="Q10">
+                            <option selected="true" disabled="disabled">Select an option</option>
+                            <option value="5">5-Strongly Agree</option>
+                            <option value="4">4-Agree</option>
+                            <option value="3">3-Undecided</option>
+                            <option value="2">2-Disagree</option>
+                            <option value="1">1-Strongly Disagree</option>
+                        </select>
+                    </div>
+                </form>
+                <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModalCenter"
+                    id="submit">Submit</button>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title mx-auto font-weight-bold" id="exampleModalCenterTitle">Best
+                                    Match</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/survey.js"></script>
+</body>
+
+</html>

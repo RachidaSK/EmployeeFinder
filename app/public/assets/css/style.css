@@ -1,0 +1,65 @@
+/* Home page*/
+body {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+}
+
+.top-main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/employees.jpg');
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-title {
+    color: #00ffff;
+}
+
+.survey-logo {
+    font-size: 26px;
+}
+
+.survey-btn {
+    background : #00ffff;
+    text-decoration: none;
+    border: none;
+}
+
+.survey-btn:hover {
+    background :#07eeee;
+}
+
+.survey-btn:active {
+    background :#aceeee;
+}
+
+/*Survey page*/
+
+.survey-body {
+    background: url('../images/survey.png');
+}
+
+.survey-page {
+    background: #ffffff;
+}
+
+.page-title1 {
+    color: #0ecccc;
+}
+.page-title2 {
+    color: #067a7a;
+}
+/* .num {
+    color:#07aaaa;
+} */
+
+.submit {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+
