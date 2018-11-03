@@ -61,5 +61,10 @@ body {
     margin-bottom: 30px;
 }
 
-
-
+/* input:invalid {
+   outline: none;
+}
+  
+input:valid {
+    border: 2px solid black;
+} */

@@ -33,18 +33,18 @@
         </div>
         <div class="row">
             <div class="col-md-10">
-                <form>
+                <form data-toggle="validator">
                     <div class="form-group">
                         <label for="formGroupExampleInput">
                             <h4>Name<small class="font-italic ml-3"><i>Required</i></small></h4>
                         </label>
-                        <input type="text" class="form-control" id="empName" placeholder="Please enter your name">
+                        <input type="text" name="empName" class="form-control" id="empName" placeholder="Please enter your name">
                     </div>
                     <div class="form-group">
                         <label for="formGroupExampleInput2">
                             <h4>Link to photo image<small class="font-italic ml-3"><i>Required</i></small></h4>
                         </label>
-                        <input type="text" class="form-control" id="empPhoto" placeholder="Please enter a link to your linkedin or github profile">
+                        <input type="text" name="empLink"class="form-control" id="empPhoto" placeholder="Please enter a link to your linkedin or github profile">
                     </div>
                 </form>
             </div>
@@ -56,14 +56,14 @@
         </div>
         <div class="row">
             <div class="col-md-10">
-                <form>
+                <form action="/action_page.php">
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q1">
                             <h4><span class="font-weight-bold num">1- </span>Sometimes, it is hard for me to make
                                 decisions.</h4>
                         </label>
-                        <select class="form-control question" id="Q1">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q1" id="Q1">
+                            <option value ="" selected="selected" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -72,12 +72,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q2">
                             <h4><span class="font-weight-bold num">2- </span>I make a grocery list before going to the
                                 store.</h4>
                         </label>
-                        <select class="form-control question" id="Q2">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q2" id="Q2">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -86,12 +86,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q3">
                             <h4><span class="font-weight-bold num">3- </span>I use a filing system for important
                                 papers.</h4>
                         </label>
-                        <select class="form-control question" id="Q3">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q3" id="Q3">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -100,12 +100,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q4">
                             <h4><span class="font-weight-bold num">4- </span>It is better to be polite and
                                 rule-obedient rather than carefree.</h4>
                         </label>
-                        <select class="form-control question" id="Q4">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q4" id="Q4">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -114,12 +114,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q5">
                             <h4><span class="font-weight-bold num">5- </span>At school I would always go over my exam
                                 papers before handing them in.</h4>
                         </label>
-                        <select class="form-control question" id="Q5">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q5" id="Q5">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -128,12 +128,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q6">
                             <h4><span class="font-weight-bold num">6- </span>I am the kind of person who sees the big
                                 picture, focusing less on the small details.</h4>
                         </label>
-                        <select class="form-control question" id="Q6">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q6" id="Q6">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -142,12 +142,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q7">
                             <h4><span class="font-weight-bold num">7- </span>I tend to have mood swings more often than
                                 others around me.</h4>
                         </label>
-                        <select class="form-control question" id="Q7">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q7" id="Q7">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -156,12 +156,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q8">
                             <h4><span class="font-weight-bold num">8- </span>I lose my temper quickly but regain
                                 composure quickly too.</h4>
                         </label>
-                        <select class="form-control question" id="Q8">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q8" id="Q8">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -170,11 +170,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q9">
                             <h4><span class="font-weight-bold num">9- </span>Rules are made to be broken.</h4>
                         </label>
-                        <select class="form-control question" id="Q9">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q2" id="Q9">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -183,13 +183,13 @@
                         </select>
                     </div>
                     <div class="form-group mb-5">
-                        <label for="exampleFormControlSelect1">
+                        <label for="Q10">
                             <h4><span class="font-weight-bold num">10- </span>I must admit I prefer to be able to do
                                 what I want rather than act within accepted
                                 rules and regulations.</h4>
                         </label>
-                        <select class="form-control question" id="Q10">
-                            <option selected="true" disabled="disabled">Select an option</option>
+                        <select class="form-control question" name="Q10" id="Q10">
+                            <option value ="" selected="true" disabled="disabled">Select an option</option>
                             <option value="5">5-Strongly Agree</option>
                             <option value="4">4-Agree</option>
                             <option value="3">3-Undecided</option>
@@ -198,9 +198,12 @@
                         </select>
                     </div>
                 </form>
-                <button type="submit" class="btn btn-primary submit" data-toggle="modal" data-target="#exampleModalCenter"
+                <div class="row">
+                    <div class="col-md-12" id="error"></div>
+                </div>
+                <button type="submit" class="btn btn-primary submit" data-toggle="modal" 
                     id="submit">Submit</button>
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                <div class="modal fade" id="empMatch" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -211,9 +214,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-
-                            </div>
+                            <div class="modal-body bestMatch"></div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             </div>
