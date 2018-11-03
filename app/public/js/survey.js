@@ -74,7 +74,6 @@ $(function () {
 
     const addEmployee = function (event) {
         event.preventDefault();
-        console.log(validateForm());
         if (validateForm()) {
             // Grab the form elements
             const response = [];
@@ -101,6 +100,7 @@ $(function () {
             getEmployees();
         } else  {
             clearInput();
+            $("#error").empty();
             $("#error").append("<div class='text-center alert alert-danger' role='alert>'>Please fill out all fields before submitting!</div>");
         }
 
