@@ -52,9 +52,10 @@ body {
 .page-title2 {
     color: #067a7a;
 }
-/* .num {
-    color:#07aaaa;
-} */
+
+.error {
+    background: pink;
+}
 
 .submit {
     width: 100%;

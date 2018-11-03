@@ -1,4 +1,35 @@
 $(function () {
+
+    // Validate function
+
+    const validateForm = function () {
+        let isValid = true;
+
+        $('input').each(function () {
+            if (!$(this).val()) {
+                isValid = false;
+            }
+        });
+
+        $('.question').each(function (i) {
+            if (!$(this).val()) {
+                isValid = false;
+            }
+        });
+        return isValid;
+    }
+
+    
+    //Clear Input fields
+
+    const clearInput = function () {
+        $('#empName').val('');
+        $('#empPhoto').val('');
+        $('.question').each(function (i) {
+            $(this).val('');
+        });
+    }
+
     //Create render function to render best match
 
     const render = function (object) {
@@ -43,34 +74,36 @@ $(function () {
 
     const addEmployee = function (event) {
         event.preventDefault();
-        // Grab the form elements
-        const response = [];
-        $('.question').each(function (i) {
-            response.push(parseInt($(this).val()));
-        });
+        console.log(validateForm());
+        if (validateForm()) {
+            // Grab the form elements
+            const response = [];
+            $('.question').each(function (i) {
+                response.push(parseInt($(this).val()));
+            });
 
-        const newEmployee = {
-            name: $('#empName').val().trim(),
-            photo: $('#empPhoto').val().trim(),
-            scores: response
-        };
+            const newEmployee = {
+                name: $('#empName').val().trim(),
+                photo: $('#empPhoto').val().trim(),
+                scores: response
+            };
+            clearInput();
 
-        //Clar the fields
-        $('#empName').val('');
-        $('#empPhoto').val('');
-        $('.question').each(function (i) {
-            $(this).val('');
-        });
-        console.log(newEmployee);
+            console.log(newEmployee);
 
-        //Add newEployee to the API
+            //Add newEployee to the API
 
-        $.ajax({
-            method: 'POST',
-            url: 'api/employees',
-            data: newEmployee
-        });
-        getEmployees();
+            $.ajax({
+                method: 'POST',
+                url: 'api/employees',
+                data: newEmployee
+            });
+            getEmployees();
+        } else  {
+            clearInput();
+            $("#error").append("<div class='text-center alert alert-danger' role='alert>'>Please fill out all fields before submitting!</div>");
+        }
+
     }
     $('#submit').on('click', addEmployee);
 
